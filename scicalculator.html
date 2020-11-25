@@ -1,0 +1,134 @@
+<style>
+body
+{
+background-color:tan;
+} 
+.box
+{
+background-color:#3d4543;
+height:300px;
+width:250px;
+border-radius:10px;
+position:relative;
+top:80px;
+left:40%;
+} 
+
+</style>
+
+<div id="container">
+    <div class="screen"><form name="scientificcalculator"><input type="text" name="display" size="20" readonly maxlength="50"></form>
+    </div>
+    <div class="btns">
+    <p>
+        <input type="button" value="SIN" class="button black"
+        onclick="scientificcalculator.display.value=Math.sin(scientificcalculator.display.value)">
+        <input type="button" value="COS" class="button trig"
+        onclick="scientificcalculator.display.value=Math.cos(scientificcalculator.display.value)">
+        <input type="button" value="TAN" class="button trig"
+        onclick="scientificcalculator.display.value=Math.tan(scientificcalculator.display.value)">
+        <input type="button" value="ABS" class="button black"
+        onclick="scientificcalculator.display.value=Math.abs(scientificcalculator.display.value)">
+        <input type="button" value="SQR" class="button black"
+        onclick="scientificcalculator.display.value=Math.sqrt(scientificcalculator.display.value)">
+        <p/>
+        <p>
+        
+        <input type="button" value="(" class="button black"
+        onclick="scientificcalculator.display.value+='('">
+        <input type="button" value=")" class="button black"
+        onclick="scientificcalculator.display.value+=')'">
+        </p>
+        <p>
+        <input type="button" value="+" class="button orange"
+        onclick="scientificcalculator.display.value+='+'">
+        <input type="button" value="-" class="button orange"
+        onclick="scientificcalculator.display.value+='-'">
+       
+        <input type="button" value="x" class="button orange"
+        onclick="scientificcalculator.display.value+='*'">
+        <input type="button" value="/" class="button orange"
+        onclick="scientificcalculator.display.value+='/'">
+         <input type="button" value="=" class="button orange"
+        onclick="scientificcalculator.display.value=eval(scientificcalculator.display.value)">
+        
+        
+        
+        </p>
+        <p>
+        <input type="button" value="7" class="button orange"
+        onclick="scientificcalculator.display.value+='7'">
+        <input type="button" value="8" class="button orange"
+        onclick="scientificcalculator.display.value+='8'">
+        <input type="button" value="9" class="button orange"
+onclick="scientificcalculator.display.value+='9'">
+
+        </p>
+        <p>
+        
+        <input type="button" value="4" class="button orange"
+        onclick="scientificcalculator.display.value+='4'">
+        <input type="button" value="5" class="button orange"
+        onclick="scientificcalculator.display.value+='5'">
+        <input type="button" value="6" class="button orange"
+        onclick="scientificcalculator.display.value+='6'">
+        </p>
+        <p>
+        <input type="button" value="1" class="button orange"
+        onclick="scientificcalculator.display.value+='1'">
+        <input type="button" value="2" class="button orange"
+        onclick="scientificcalculator.display.value+='2'">
+        <input type="button" value="3" class="button orange"
+        onclick="scientificcalculator.display.value+='3'">
+        <input type="button" value="0" class="button orange"
+        onclick="scientificcalculator.display.value+='0'">
+        </p>
+        <p>
+        <input type="button" value="DEL" class="button red"
+        onclick="scientificcalculator.display.value =''">
+       
+        <input type="button" value="PI" class="button black"
+        onclick="scientificcalculator.display.value+=Math.PI">
+
+        </p>
+
+        </div>
+        </div>
+        </body>
+        </html>
+   
+
+ 
+
+
+    
+
+
+
+
+    </p>
+</div>
+</div>
+
+<script>
+function c(val)
+{
+document.getElementById("d").value=val;
+}
+function v(val)
+{
+document.getElementById("d").value+=val;
+}
+function e() 
+{ 
+try 
+{ 
+  c(eval(document.getElementById("d").value)) 
+} 
+catch(e) 
+{
+  c('Error') 
+} 
+}  
+
+</script>
